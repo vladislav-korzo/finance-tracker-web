@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================================
+   Lumen — design tokens (ported from web src/index.css)
+   HSL channels consumed via hsl(var(--token) / <alpha-value>).
+   Light lives in :root, dark overrides in .dark:root (NativeWind class mode).
+   ========================================================================== */
+
+@layer base {
+  :root {
+    /* Surfaces */
+    --background: 220 33% 98%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --surface-2: 220 27% 96%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Brand */
+    --primary: 72 90% 55%;
+    --primary-foreground: 222 47% 11%;
+    --secondary: 220 27% 95%;
+    --secondary-foreground: 222 40% 18%;
+    --muted: 220 27% 96%;
+    --muted-foreground: 217 14% 46%;
+    --accent: 73 80% 92%;
+    --accent-foreground: 95 60% 22%;
+    --destructive: 0 78% 58%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Lines & focus */
+    --border: 220 20% 91%;
+    --input: 220 20% 91%;
+    --ring: 72 90% 45%;
+
+    /* Finance semantics */
+    --income: 158 64% 40%;
+    --income-foreground: 158 64% 30%;
+    --expense: 8 82% 60%;
+    --expense-foreground: 8 72% 48%;
+
+    /* Data viz */
+    --chart-1: 72 84% 48%;
+    --chart-2: 158 64% 42%;
+    --chart-3: 199 89% 52%;
+    --chart-4: 262 70% 62%;
+    --chart-5: 32 95% 56%;
+    --chart-6: 330 75% 60%;
+
+    /* Hero / dark surface used on cards in both themes */
+    --hero: 224 38% 12%;
+    --hero-foreground: 210 30% 96%;
+
+    /* Background mesh accent stops */
+    --mesh-1: 72 90% 60%;
+    --mesh-2: 158 70% 50%;
+    --mesh-3: 210 90% 60%;
+
+    /* Elevation shadow color */
+    --shadow-color: 222 47% 30%;
+  }
+
+  .dark:root {
+    --background: 224 36% 6%;
+    --foreground: 210 30% 96%;
+    --card: 223 24% 13%;
+    --card-foreground: 210 30% 96%;
+    --surface-2: 223 22% 17%;
+    --popover: 223 30% 11%;
+    --popover-foreground: 210 30% 96%;
+
+    --primary: 72 88% 56%;
+    --primary-foreground: 224 40% 8%;
+    --secondary: 223 22% 16%;
+    --secondary-foreground: 210 24% 90%;
+    --muted: 223 22% 15%;
+    --muted-foreground: 217 16% 62%;
+    --accent: 95 40% 18%;
+    --accent-foreground: 73 80% 78%;
+    --destructive: 0 72% 56%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 14% 26%;
+    --input: 220 16% 20%;
+    --ring: 72 88% 50%;
+
+    --income: 158 64% 48%;
+    --income-foreground: 158 60% 64%;
+    --expense: 8 86% 66%;
+    --expense-foreground: 8 86% 70%;
+
+    --chart-1: 72 84% 56%;
+    --chart-2: 158 64% 50%;
+    --chart-3: 199 89% 60%;
+    --chart-4: 262 78% 72%;
+    --chart-5: 32 95% 62%;
+    --chart-6: 330 80% 68%;
+
+    --hero: 223 32% 11%;
+    --hero-foreground: 210 30% 96%;
+
+    --mesh-1: 72 90% 50%;
+    --mesh-2: 158 70% 40%;
+    --mesh-3: 224 80% 55%;
+
+    --shadow-color: 224 60% 2%;
+  }
+}
